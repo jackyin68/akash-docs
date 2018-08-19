@@ -6,10 +6,12 @@ services:
     image: quay.io/ovrclk/akash-docs
     accept:
       - docs.akash.network
+      - docs1.akash.network
       - akash.network
+      - www1.akash.network
 
     expose:
-      - port: 4567
+      - port: 80
         as: 80
         to:
           - global: true
@@ -17,14 +19,15 @@ services:
 profiles:
   compute:
     web:
-      cpu: "200m"
-      memory: "1024Mi"
-      disk: "512Mi"
+      cpu: "100m"
+      memory: "512Mi"
+      disk: "256Mi"
   placement:
     san-jose:
       attributes:
+        region: sjc
       pricing:
-        web: .0040
+        web: .0012
 
 deployment:
   web:

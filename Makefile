@@ -28,4 +28,4 @@ create:
 remove: 
 	akash deployment close $(shell cat .akash | head -1) -k $(KEY)
 
-.PHONY: server installdeps deploy img img-run img-push create remove
+.PHONY: build server installdeps deploy img img-run img-push create remove
