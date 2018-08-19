@@ -1,0 +1,34 @@
+---
+version: "1.0"
+
+services:
+  web:
+    image: quay.io/ovrclk/akash-docs
+    accept:
+      - docs.akash.network
+      - akash.network
+
+    expose:
+      - port: 4567
+        as: 80
+        to:
+          - global: true
+
+profiles:
+  compute:
+    web:
+      cpu: "100m"
+      memory: "512Mi"
+      disk: "512Mi"
+  placement:
+    san-jose:
+      attributes:
+        region: sjc
+      pricing:
+        web: .0012
+
+deployment:
+  web:
+    san-jose:
+      profile: web
+      count: 1
