@@ -1,8 +1,12 @@
-d686b7288920fe14db9b3d456a2da970b01f2f49c1807037d331542064d0f744
+f20fe77fa613742ae3707e5c7795dd24a9c64446ba5cb64a842ee0bed52b882f
 Waiting...
-Group 1/1 Fulfillment: d686b7288920fe14db9b3d456a2da970b01f2f49c1807037d331542064d0f744/1/2/b5699c11e40b9c8569094777da31c24a25bb5792f8e3092afde82daa8578e9ad [price=60]
-Group 1/1 Fulfillment: d686b7288920fe14db9b3d456a2da970b01f2f49c1807037d331542064d0f744/1/2/1640fa269587cf31d853f4e5fc061442a432ed5aa26e4db755ba13796e15ccd7 [price=25]
-Group 1/1 Lease: d686b7288920fe14db9b3d456a2da970b01f2f49c1807037d331542064d0f744/1/2/1640fa269587cf31d853f4e5fc061442a432ed5aa26e4db755ba13796e15ccd7 [price=25]
-Sending manifest to http://provider.sjc.arrakis.akashtest.net...
-Service URIs for provider: 1640fa269587cf31d853f4e5fc061442a432ed5aa26e4db755ba13796e15ccd7
-	web: web.43031a18-1551-4eb1-8605-50af14ff17b2.147-75-70-213.aksh.io
+Group 1/1 Fulfillment: f20fe77fa613742ae3707e5c7795dd24a9c64446ba5cb64a842ee0bed52b882f/1/2/b5699c11e40b9c8569094777da31c24a25bb5792f8e3092afde82daa8578e9ad [price=42]
+Group 1/1 Fulfillment: f20fe77fa613742ae3707e5c7795dd24a9c64446ba5cb64a842ee0bed52b882f/1/2/1640fa269587cf31d853f4e5fc061442a432ed5aa26e4db755ba13796e15ccd7 [price=71]
+Group 1/1 Lease: f20fe77fa613742ae3707e5c7795dd24a9c64446ba5cb64a842ee0bed52b882f/1/2/b5699c11e40b9c8569094777da31c24a25bb5792f8e3092afde82daa8578e9ad [price=42]
+Sending manifest to http://provider.sjc.ix.akashtest.net...
+Service URIs for provider: b5699c11e40b9c8569094777da31c24a25bb5792f8e3092afde82daa8578e9ad
+	web: docs.akash.network
+	web: docs1.akash.network
+	web: akash.network
+	web: www1.akash.network
+	web: web.acc98df6-8ea1-419c-8eef-e3025ce2a8f3.147-75-201-51.aksh.io

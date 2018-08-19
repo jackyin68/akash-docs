@@ -4,15 +4,15 @@ version: "1.0"
 services:
   web:
     image: quay.io/ovrclk/akash-docs
-    accept:
-      - docs.akash.network
-      - docs1.akash.network
-      - akash.network
-      - www1.akash.network
 
     expose:
       - port: 80
         as: 80
+        accept:
+          - docs.akash.network
+          - docs1.akash.network
+          - akash.network
+          - www1.akash.network
         to:
           - global: true
 
