@@ -134,7 +134,7 @@ You must register with Akash to request access to the testnet. This is a one-tim
 
 To register:
 
-1. Go to [akash.network/testnet](/https://akash.network/testnet) and follow the instructions.
+1. Go to [akash.network/testnet](https://akash.network/testnet) and follow the instructions.
 1. You'll immediately receive a confirmation email.  Click the link inside to confirm your email and request testnet tokens.
 1. After review by our staff, we will send tokens to your address and confirm with another email.
 
