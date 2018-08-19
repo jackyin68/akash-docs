@@ -2,19 +2,22 @@ IMAGE = quay.io/ovrclk/akash-docs
 KEY   = master
 
 server:
-	bundle exec middleman
+	bundle exec middleman server
 
 installdeps:
 	gem install bundler
 	bundle
 
-deploy: img img-push remove create
+deploy: build img img-push remove create
+
+build:
+	bundle exec middleman build --clean
 
 img:
 	docker build -t $(IMAGE) .
 
 img-run:
-	docker run --rm -p 4567:4567 -it $(IMAGE)
+	docker run --rm -p 8080:80 -it $(IMAGE)
 
 img-push:
 	docker push $(IMAGE)

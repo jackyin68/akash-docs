@@ -17,15 +17,14 @@ services:
 profiles:
   compute:
     web:
-      cpu: "100m"
-      memory: "512Mi"
+      cpu: "200m"
+      memory: "1024Mi"
       disk: "512Mi"
   placement:
     san-jose:
       attributes:
-        region: sjc
       pricing:
-        web: .0012
+        web: .0040
 
 deployment:
   web:
