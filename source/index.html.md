@@ -41,21 +41,12 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install ovrclk/tap/akash
 ```
 
-> Install `akashd` daemon using homebrew
-
-```shell
-$ brew install ovrclk/tap/akashd
-```
-
 The simplest way to install is by using [homebrew](https://brew.sh)
 
 ### Install the client(`akash`)
 
 Install `akash` client by running `brew install ovrclk/tap/akash`. Once installed, verify the installation by running `akash version`.
 
-### Install the daemon (`akashd`)
-
-Install `akashd` daemon by running `brew install ovrclk/tap/akashd`. Once installed, verify the installation by running `akashd version`.
 
 ## Others (From Source)
 
@@ -203,13 +194,13 @@ You must replace <code>my-key-name</code> with the key name you created during t
 
 In this step, you post your deployment, the Akash marketplace matches you with a provider via auction, and your image is deployed. To create a deployment use `akash deployment`. The syntax for the deployment is `akash deployment <deployment file path> -k <key name>`.
 
-The client will print the deployment id, bid, lease, and deployment data to console. Alternatively, you may also query your leases with `akash query lease`.
+The client will print the deployment id, bid, lease, and deployment data to console. Alternatively, you may also query your leases with `akash query lease -k <key name>`.
 
 
 > Check the status of the lease
 
 ```shell
-$ akash query lease
+$ akash query lease -k my-key-name
 {
   "items": [
     {
