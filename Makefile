@@ -15,7 +15,11 @@ build:
 	bundle exec middleman build --clean
 
 conf: 
-	cat akash.yml.tmpl | sed s/akash-docs:latest/akash-docs:$(VERSION)/ > akash.yml
+	cat akash.yml.tmpl | sed s/akash-docs/akash-docs:$(VERSION)/ > akash.yml
+
+conf1: 
+	$(eval sha := $(shell docker inspect quay.io/ovrclk/akash-docs -f '{{ .Id }}'))
+	cat akash.yml.tmpl | sed s/akash-docs@{sha}/akash-docs@$(sha)/ > akash.yml
 
 img:
 	docker build -t $(IMAGE) .

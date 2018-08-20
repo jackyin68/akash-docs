@@ -23,6 +23,10 @@ The Network contains two major functional elements:
 
 The permission-less marketplace provides a censorship-resistant procurement mechanism for highly scalable and secure container based deployments for base resources which are compute, memory, bandwidth, and storage.
 
+### See a mistake? Open a pull request
+
+[https://github.com/ovrclk/akash-docs/blob/master/source/index.html.md](https://github.com/ovrclk/akash-docs/blob/master/source/index.html.md)
+
 # Installation
 
 The Akash Suite is composed of a full node `akashd` and the client `akash`.  The full node (`akashd`) is the (tendermint-based) blockchain node that implements the decentralized exchange. `akash` is the client used to access the exchange and network in general.
