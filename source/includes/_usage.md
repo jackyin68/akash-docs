@@ -4,7 +4,7 @@ This section describes usage of the Akash client for requesting and managing dep
 
 ### Installation
 
-Installation instructions for the client binary may be found [here](#installing). Each of these package managers will install both `akashd` (the server) and `akash` (the client). This document describes client usage only.
+Installation instructions for the client binary may be found [here](#installation). Each of these package managers will install both `akashd` (the server) and `akash` (the client). This document describes client usage only.
 
 ### The Akash TestNet
 The Akash testnet is available for public use.A description of the testnet, registration instructions, and a getting-started guide may be found [here](#testnet).
