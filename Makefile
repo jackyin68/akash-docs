@@ -14,6 +14,9 @@ deploy: build img img-push update
 build:
 	bundle exec middleman build --clean
 
+conf: 
+	cat akash.yml.tmpl | sed s/akash-docs:latest/akash-docs:$(VERSION)/ > akash.yml
+
 img:
 	docker build -t $(IMAGE) .
 
@@ -23,13 +26,13 @@ img-run:
 img-push:
 	docker push $(IMAGE)
 
-create:
+create: conf
 	akash deployment create akash.yml -k master > .akash
 
-remove: 
+remove: conf 
 	akash deployment close $(shell cat .akash | head -1) -k $(KEY)
 
-update: 
+update: conf
 	akash deployment update akash.yml $(shell cat .akash | head -1) -k $(KEY)
 
-.PHONY: build server installdeps deploy img img-run img-push create remove
+.PHONY: conf build server installdeps deploy img img-run img-push create remove
