@@ -3,7 +3,7 @@ version: "1.0"
 
 services:
   web:
-    image: quay.io/ovrclk/akash-docs:0.0.2
+    image: quay.io/ovrclk/akash-docs:0.0.3
     expose:
       - port: 80
         as: 80
