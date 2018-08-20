@@ -1,6 +1,6 @@
-VERSION = 0.0.3
-IMAGE = quay.io/ovrclk/akash-docs:$(VERSION)
-KEY   = master
+VERSION = $(shell cat VERSION)
+IMAGE 	= quay.io/ovrclk/akash-docs:$(VERSION)
+KEY   	= master
 
 server:
 	bundle exec middleman server
