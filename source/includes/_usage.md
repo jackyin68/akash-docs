@@ -40,7 +40,7 @@ Available Commands:
   version     Print version
 
 Flags:
-  -d, --data string   data directory (default "/Users/gosuri/.akash")
+  -d, --data string   data directory (default "~/.akash")
   -h, --help          help for akash
 
 Use "akash [command] --help" for more information about a command
@@ -98,7 +98,7 @@ Flags:
   -h, --help   help for deployment
 
 Global Flags:
-  -d, --data string   data directory (default "/Users/gosuri/.akash")
+  -d, --data string   data directory (default "~/.akash")
 
 Use "akash deployment [command] --help" for more information about a command.
 ```
@@ -324,7 +324,7 @@ Flags:
   -h, --help   help for key
 
 Global Flags:
-  -d, --data string   data directory (default "/Users/gosuri/.akash")
+  -d, --data string   data directory (default "~/.akash")
 
 Use "akash key [command] --help" for more information about a command.
 ```
@@ -524,7 +524,7 @@ Flags:
   -n, --node string   node host (default "http://api.akashtest.net:80")
 
 Global Flags:
-  -d, --data string   data directory (default "/Users/gosuri/.akash")
+  -d, --data string   data directory (default "~/.akash")
 
 Use "akash provider [command] --help" for more information about a command.
 ```
@@ -623,7 +623,7 @@ Flags:
   -n, --node string   node host (default "http://api.akashtest.net:80")
 
 Global Flags:
-  -d, --data string   data directory (default "/Users/gosuri/.akash")
+  -d, --data string   data directory (default "~/.akash")
 
 Use "akash query [command] --help" for more information about a command.
 ```
